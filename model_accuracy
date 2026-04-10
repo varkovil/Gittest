@@ -1,0 +1,12 @@
+def check_accuracy(accuracy, threshold=90.0):
+if accuracy >= threshold:
+print(f"✅ Model passed! Accuracy: {accuracy}% (minimum: {threshold}%)")
+return True
+else:
+print(f"❌ Model failed! Accuracy: {accuracy}% (minimum: {threshold}%)")
+return False
+# Test
+check_accuracy(94.2)
+# should pass
+check_accuracy(85.0)
+# should fail
